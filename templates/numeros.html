@@ -1,0 +1,12 @@
+<ion-view view-title="Numeros">
+  <ion-content>
+    <ion-list>
+    <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="tel in numeros" type="item-text-wrap">
+        <img ng-src="{{tel.face}}">
+        <h2>{{tel.name}}</h2>
+        <p>{{tel.numero}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
