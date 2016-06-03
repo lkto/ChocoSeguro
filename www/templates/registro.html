@@ -1,0 +1,57 @@
+<ion-view view-title="login" hide-nav-bar="true" class="login-bg" cache-view="false">
+
+
+<style type="text/css">
+  .menu {
+width: 2px !important;
+background-color: #fff !important;
+display: none !important;
+}
+</style>
+
+  <ion-content>
+    <!-- Logo -->
+
+<div class="bar bar-header" style="border:none;background-color:transparent;">
+ <a href="#/login" class="light"><button class="button button-icon icon ion-ios-arrow-back">
+   Iniciar sesion
+ </button>
+ </a>
+  <div class="h1 title"></div>
+</div>
+
+
+ 
+
+    <!-- Signup form -->
+    <div id="register" ng-app='angular_post' ng-controller='registrar'>
+    <div class="list list-inset transparent-form">
+
+     <label class="item item-input">
+        <i class="ion-ios-person-outline light icon-label"></i>
+        <input type="text" placeholder="Nombre Completo"name="nombre_r" id="nombre_r" ng-model="nombre_r">
+      </label>
+
+      <label class="item item-input">
+        <i class="ion-ios-email-outline light icon-label"></i>
+        <input type="email" placeholder="Correo Electronico" name="email_r" id="email_r" ng-model="email_r">
+      </label>
+
+      <label class="item item-input">
+        <i class="ion-ios-locked-outline light icon-label"></i>
+        <input type="password" placeholder="Contraseña" name="password_r" id="password_r" ng-model="password_r">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" >
+        Registrarse
+      </button>
+    </div>
+    </div>
+
+    
+
+    <!-- Other links -->
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,38 @@
+<ion-view view-title="{{ post.titulo }}" cache-view="false">
+  <ion-content>
+
+    <div class="main-post item item-avatar no-border">
+      <img ng-src="img/mike.png" ng-click="">
+      <h2 class="post-author" style="white-space:initial;">
+        Noticia X
+      </h2>
+      <span class="post-time">
+        <i class="ion-ios-timer-outline"></i>
+        xxxx/xx/xx
+      </span>
+    </div>
+
+    <div class="padding">
+      <img class="full-image"  src="img/perry.png">
+      <p style="text-align: justify; padding: 10px;" ng-bing-html='descripcion'><pre>Descripción noticia</pre></p> 
+    </div> 
+<!--
+    <div class="item item-avatar post-comment" ng-repeat="comment in post.comments">
+      <img ng-src="{{comment.face}}">
+      <h3 class="post-author">
+        {{ comment.name }}
+      </h3>
+      <p>{{ comment.content | nl2br}}</p>
+      <a class="subdued like-count">
+        <i class="ion-heart assertive" ng-if="comment.liked"></i>
+        <i class="ion-heart" ng-if="!comment.liked"></i>
+        {{ comment.likeCount}}
+      </a>
+      <span class="post-time">
+        <i class="ion-ios-timer-outline"></i>
+        {{ comment.time }}
+      </span>
+    </div>
+-->
+  </ion-content>
+</ion-view>

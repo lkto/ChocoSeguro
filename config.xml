@@ -1,48 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-  <widget xmlns = "http://www.w3.org/ns/widgets"
-    xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "www.CSPo.sigtics.org"
-    versionCode= "2.0"
-    version   = "2.0">
-    <name>Choco Segura</name>
-    <description>
-Demo   </description>
-    <author href="http://sigtics.org/" email="sigtics@gmail.com">
-Sigtics
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.ionicframework.chocosegura716364" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>ChocoSegura</name>
+  <description>
+        An Ionic Framework and Cordova project.
+    </description>
+  <author email="you@example.com" href="http://example.com.com/">
+      Your Name Here
     </author>
-    <preference name="phonegap-version" value="3.7.0" />
-    <preference name="orientation" value="default" />
-    <preference name="fullscreen" value="false" />
-    <preference name="target-device" value="universal" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="true" />
-    <preference name="ios-statusbarstyle" value="default" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="EnableViewportScale" value="true" />
-    <preference name="MediaPlaybackRequiresUserAction" value="false" />
-    <preference name="AllowInlineMediaPlayback" value="false" />
-    <preference name="BackupWebStorage" value="cloud" />
-    <preference name="TopActivityIndicator" value="gray" />
-    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
-    <preference name="HideKeyboardFormAccessoryBar" value="false" />
-    <preference name="SuppressesIncrementalRendering" value="false" />
-    <preference name="android-minSdkVersion" value="13" />
-    <preference name="android-installLocation" value="internalOnly" />
-    <preference name="SplashScreenDelay" value="8000" />
-    <preference name="ErrorUrl" value=""/>
-    <preference name="BackgroundColor" value="0x000000"/>
-    <preference name="KeepRunning" value="true"/>
-    <preference name="DisallowOverscroll" value="false"/>
-    <preference name="LoadUrlTimeoutValue" value="20000" />
-    <preference name="disable-cursor" value="false" />
-    <gap:platform name="android" />
-
-    <access origin="*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="mailto:*" />
-    
-  </widget>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+</widget>
